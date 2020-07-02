@@ -1,0 +1,162 @@
+/* Universal Box Sizing with Inheritance */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Elements */
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img 
+.google {
+  width: 272px;
+  height: 92px;
+}
+
+form {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  float: left
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.buttons {
+  width: 300px;
+  margin: 0 auto;
+  padding: 15px 8px;
+  display: inline-block;
+}
+
+.button {
+  padding: 10px 16px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: #5F6368;
+  border: 1px solid transparent;
+}
+nav.top {
+  font-family: arial, sans-serif;
+  font-size: small;
+  opacity: 0.75;
+}
+
+.bottom {
+  font-family: arial, sans-serif;
+  font-size: small;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  color: rgb(95, 99, 104);
+}
+/* Classes */
+
+.main {
+  width: 500px;
+  margin: 0 auto;
+  padding: 175px 15px 10px;
+
+}
+
+.search {
+  display: block;
+  width: 450px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 18px 30px;
+  border-radius: 17px;
+  margin-bottom: 8px;
+  border: 1px solid lightgrey;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-wrapper img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-left: 20px;
+  paddinG-top: 10px;
+}
+
+.daily-img {
+  position : center;
+  width:90px;
+  height:40px;
+}
+
+.google {
+  padding-bottom: 20px;
+}
+
+.top-left {
+  float: left;
+}
+
+.top-right {
+  float: right;
+}
+
+.bottom-left {
+  float: left;
+}
+
+.bottom-right {
+  float: right;
+}
+
+img.profile {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top: -5px;
+}
+
+/* Psuedoelements */
+
+input[type=search]:focus,
+input[type=search]:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:focus,
+button:hover {
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+
+a:hover {
+  text-decoration: underline;
+}
